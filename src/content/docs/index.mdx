@@ -1,0 +1,43 @@
+---
+title: eduroam 臺灣資料庫
+description: 讓你更方便連上 eduroam。
+template: splash
+hero:
+  tagline: 讓你更方便連上 eduroam。
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: 開始使用
+      link: /guides/example/
+      icon: right-arrow
+    - text: 其他服務
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 服務列表
+
+<CardGrid stagger>
+	<Card title="iDP 設定檔資料庫" icon="add-document">
+		用於 geteduroam 程式的設定檔。[API](https://download.isli.me/) [GitHub](https://github.com/eduroamtw/geteduroam_tw)
+	</Card>
+	<Card title="iDP Realm 資料庫" icon="pencil">
+		臺灣目前所有接入學術漫遊的機構清單。 [GitHub](https://github.com/eduroamtw/TWiDPList)
+	</Card>
+	<Card title="iDP 憑證資料庫" icon="setting">
+		建立設定檔時，RADIUS 傳送給客戶端的伺服器憑證。 [GitHub](https://github.com/eduroamtw/TWiDPCACertDB)
+	</Card>
+	<Card title="TANetRoaming 向下相容設定檔" icon="open-book">
+		內部實驗中，未來將可以使不支援 EAP 認證的 iDP 可使用 eduroam 服務。
+	</Card>
+	<Card title="設定檔線上產生器" icon="open-book">
+		可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器。 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater_colab)
+[Colab](https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb)
+	</Card>
+	<Card title="設定檔產生器 (單機)" icon="open-book">
+		可生成任意單位的設定檔，支援地端 RADIUS 主機，以及中國科大與西安科大的測試伺服器。 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater)
+	</Card>
+</CardGrid>
