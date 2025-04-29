@@ -5,39 +5,45 @@ template: splash
 hero:
   tagline: 讓你更方便連上 eduroam。
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/icon.png
   actions:
-    - text: 開始使用
-      link: /guides/example/
+    - text: 設定檔下載
+      link: https://download.isli.me/
+      icon: right-arrow
+    - text: 文件
+      link: /documents/start/
       icon: right-arrow
     - text: 其他服務
-      link: https://starlight.astro.build
+      link: /#%E6%9C%8D%E5%8B%99%E4%B8%80%E8%A6%BD
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## 服務列表
+## 服務一覽
 
 <CardGrid stagger>
 	<Card title="iDP 設定檔資料庫" icon="add-document">
+		#### [Link](/idp_profile_db/)
 		用於 geteduroam 程式的設定檔。[API](https://download.isli.me/) [GitHub](https://github.com/eduroamtw/geteduroam_tw)
 	</Card>
-	<Card title="iDP Realm 資料庫" icon="pencil">
-		臺灣目前所有接入學術漫遊的機構清單。 [GitHub](https://github.com/eduroamtw/TWiDPList)
-	</Card>
-	<Card title="iDP 憑證資料庫" icon="setting">
+	<Card title="iDP Realm & 憑證資料庫" icon="setting">
+		#### [Link](/idp_realm_cert_db/)
+		臺灣目前所有接入學術漫遊的機構清單。 [GitHub](https://github.com/eduroamtw/TWiDPList)  
 		建立設定檔時，RADIUS 傳送給客戶端的伺服器憑證。 [GitHub](https://github.com/eduroamtw/TWiDPCACertDB)
 	</Card>
-	<Card title="TANetRoaming 向下相容設定檔" icon="open-book">
+	<Card title="設定檔線上 / 單機生成器" icon="pencil">
+		#### [Link](/profile_gen/)
+		可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器，單機版亦支援地端 RADIUS 主機。 [線上版 GitHub](https://github.com/eduroamtw/eduroam_profile_generater_colab)
+[Colab](https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb) [地端版 GitHub](https://github.com/eduroamtw/eduroam_profile_generater)
+	</Card>
+	<Card title="TANetRoaming 向上相容設定檔" icon="open-book">
+		#### [Link](/offload/)
 		內部實驗中，未來將可以使不支援 EAP 認證的 iDP 可使用 eduroam 服務。
 	</Card>
-	<Card title="設定檔線上產生器" icon="open-book">
-		可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器。 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater_colab)
-[Colab](https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb)
-	</Card>
-	<Card title="設定檔產生器 (單機)" icon="open-book">
-		可生成任意單位的設定檔，支援地端 RADIUS 主機，以及中國科大與西安科大的測試伺服器。 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater)
+	<Card title="文件" icon="open-book">
+		#### [Link](/documents/start/)
+		大概是各種疑難雜症和教育訓練的集合，整理中。
 	</Card>
 </CardGrid>

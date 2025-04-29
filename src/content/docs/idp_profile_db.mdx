@@ -1,0 +1,42 @@
+---
+title: iDP 設定檔資料庫
+description: 用於 geteduroam 程式的設定檔。
+template: splash
+hero:
+  tagline: 用於 geteduroam 程式的設定檔。
+  image:
+    file: ../../assets/icon.png
+  actions:
+    - text: 設定檔下載 (API)
+      link: https://download.isli.me/
+      icon: right-arrow
+    - text: 設定檔下載 (GitHub)
+      link: https://github.com/eduroamtw/geteduroam_tw/
+      icon: right-arrow
+    - text: geteduroam 下載
+      link: http://eduroam.app/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+因為臺灣沒有官方的 geteduroam 能用，所以我手搓了一些大學的設定檔[1]。  
+製作這些設定檔時，參考了 `Srednja šola Jesenice` 以及 `eVA(UK) - eduroam Visitor Access UK` 的設定檔格式，在此註明。  
+目前僅支援認證方式為 PEAP-MSCHAPv2 / TTLS-PAP 的學校，不支援 PEAP-GTC。  
+設定應用程式請至 https://www.geteduroam.app/ 下載。  
+近期會更新更多學校的設定檔，如果有立即性需求，請參考我們的自動化生成工具 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater_colab) [Colab](https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb)
+
+# 免責聲明
+以下設定檔皆為第三方製作，與各校方管理單位無關，且本方不對設定檔有效性做任何擔保。  
+其次，由於我無法取得各校的測試帳號，以下設定檔資訊大多以實際測試、認證過程 log、學校官方文件推敲組合，可能與實際情況有出入。  
+如果內容有誤 (如認證方式、根憑證資訊、Domain、Realm 等)，歡迎直接開 Issue 或 Pull requests 修正，畢竟我不可能整天監測學校根憑證有沒有換。  
+如果有需要不在名單上的學校，也歡迎開 Issue 或 Pull requests。  
+設定檔內已包含：  
+- Server CA 根憑證[2]
+- 啟用匿名身分
+- EAP 方式
+- 二階段認證方式
+
+註[1]：此設定檔為第三方提供，與校方管理單位無關，且本方不對設定檔有效性做任何擔保。  
+註[2]：根憑證 (CA Certificate) 已包含在設定檔內部，如有資安疑慮可參見 [自行建立設定檔](guides/selfgen) 自行設定。  

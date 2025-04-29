@@ -10,15 +10,24 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/eduroamtw' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: '文件',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: '開始', slug: 'documents/start' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '資訊',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: '關於我們', slug: 'teams/about' },
+						{ label: '服務列表', slug: 'teams/services' },
+						{ label: '貢獻者', slug: 'teams/reference' },
+					],
+				},
+				{
+					label: '手冊',
+					autogenerate: { directory: 'guides' },
 				},
 			],
 		}),
