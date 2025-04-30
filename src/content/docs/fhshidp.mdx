@@ -1,43 +1,58 @@
 ---
-title: eduroam 臺灣資料庫
-description: 讓你更方便連上 eduroam。
+title: 鳳新高中專區
+description: 鳳新高中內部用
 template: splash
 hero:
-  tagline: 讓你更方便連上 eduroam。
+  tagline: 鳳新高中內部用
   image:
-    file: ../../assets/icon.png
+    file: https://www.fhsh.khc.edu.tw/wp-content/uploads/sites/33/2021/06/cropped-fhsh_favicon-192x192.png
   actions:
-    - text: 開始使用
-      link: /guides/example/
+    - text: 使用說明
+      link: /fhshidp#%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E
       icon: right-arrow
-    - text: 其他服務
-      link: https://starlight.astro.build
+    - text: geteduroam 使用教學
+      link: /guides/geteduroam
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## 服務一覽
+# 使用說明
+目前有下列兩個帳號來源可以使用：
+- 鳳新 Google 帳號
+- 教育雲。
 
+我們推薦您使用鳳新 Google 帳號認證，節省您申辦教育雲帳號的時間。  
+接入點部分，目前我們提供校內的 Fhsh-Eduroam 接入點以及全球通用的 eduroam 接入點設定，
+請您依據您帳號來源，選擇正確的兩個設定檔安裝。  
+註：由於可用性問題以及嚴重的資安風險問題，我們已停止支援由高雄資教維護 (高雄部分高中、國中小) 的魔改版 eduroam。
+除非高雄資教將其維運的 eduroam 依照 RFC7593 的規範設定，否則您將無法在高雄資教的 SP 連線，敬請見諒。  
+
+# 設定檔下載
 <CardGrid stagger>
-	<Card title="iDP 設定檔資料庫" icon="add-document">
-		用於 geteduroam 程式的設定檔。[API](https://download.isli.me/) [GitHub](https://github.com/eduroamtw/geteduroam_tw)
+	<Card title="eduroam + 鳳新 Google 帳號" icon="add-document">
+		校外 eduroam + 鳳新 Google 帳號 (`@fhsh.khc.edu.tw`) 用。  
+		[API](https://download.isli.me/api/raw?path=/fhshidp/eduroam-eap-generic-FHSH.eap-config)
+		[GitHub](https://raw.githubusercontent.com/eduroamtw/FHSH-eduroam/refs/heads/main/EAP-Profile/eduroam-eap-generic-FHSH.eap-config)
 	</Card>
-	<Card title="iDP Realm 資料庫" icon="pencil">
-		臺灣目前所有接入學術漫遊的機構清單。 [GitHub](https://github.com/eduroamtw/TWiDPList)
+	<Card title="Fhsh-Eduroam + 鳳新 Google 帳號" icon="add-document">
+		校內 Fhsh-Eduroam + 鳳新 Google 帳號 (`@fhsh.khc.edu.tw`) 用。  
+		[API](https://download.isli.me/api/raw?path=/fhshidp/Fhsh-Eduroam-eap-generic-FHSH.eap-config)
+		[GitHub](https://raw.githubusercontent.com/eduroamtw/FHSH-eduroam/refs/heads/main/EAP-Profile/Fhsh-Eduroam-eap-generic-FHSH.eap-config)
 	</Card>
-	<Card title="iDP 憑證資料庫" icon="setting">
-		建立設定檔時，RADIUS 傳送給客戶端的伺服器憑證。 [GitHub](https://github.com/eduroamtw/TWiDPCACertDB)
+	<Card title="eduroam + 教育雲帳號" icon="add-document">
+		校外 eduroam + 教育雲帳號 (`@mail.edu.tw`) 用。  
+		[API](https://download.isli.me/api/raw?path=/fhshidp/eduroam-eap-generic-TWEdu.eap-config)
+		[GitHub](https://raw.githubusercontent.com/eduroamtw/FHSH-eduroam/refs/heads/main/EAP-Profile/eduroam-eap-generic-TWEdu.eap-config)
 	</Card>
-	<Card title="TANetRoaming 向下相容設定檔" icon="open-book">
-		內部實驗中，未來將可以使不支援 EAP 認證的 iDP 可使用 eduroam 服務。
-	</Card>
-	<Card title="設定檔線上產生器" icon="open-book">
-		可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器。 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater_colab)
-[Colab](https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb)
-	</Card>
-	<Card title="設定檔產生器 (單機)" icon="open-book">
-		可生成任意單位的設定檔，支援地端 RADIUS 主機，以及中國科大與西安科大的測試伺服器。 [GitHub](https://github.com/eduroamtw/eduroam_profile_generater)
+	<Card title="Fhsh-Eduroam + 教育雲帳號" icon="add-document">
+		校內 Fhsh-Eduroam + 教育雲帳號 (`@mail.edu.tw`) 用。  
+		[API](https://download.isli.me/api/raw?path=/fhshidp/Fhsh-Eduroam-eap-generic-TWEdu.eap-config)
+		[GitHub](https://raw.githubusercontent.com/eduroamtw/FHSH-eduroam/refs/heads/main/EAP-Profile/Fhsh-Eduroam-eap-generic-TWEdu.eap-config)
 	</Card>
 </CardGrid>
+
+# 使用教學
+使用我們的設定檔，您需要先下載安裝 [geteduroam 應用程式](http://eduroam.app/)。  
+詳細教學請參見 [geteduroam 使用教學](/guides/geteduroam)。
