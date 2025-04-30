@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://edur.isli.me',
 	integrations: [
 		starlight({
 			title: 'eduroamTW 第三方資料庫',
