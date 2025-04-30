@@ -1,8 +1,8 @@
 ---
-title: Example Guide
-description: A guide in my new Starlight docs site.
+title: 關於我們
+description: 關於我們
 ---
-大家好，這裡是eduroam台灣第三方資料庫，目前主要由 chilin.h 和 e0pwr 共同維護。<br>
+大家好，這裡是 eduroam 台灣第三方資料庫，目前主要由 chilin.h 和 e0pwr 共同維護。<br>
 本網站目標是台灣的學術使用者，能夠藉由本網站提供的資訊讓 eduroam 認證服務更加實用。<br>
 目前提供的服務有以下幾個：<br>
 - 提供各級連線單位第三方連線設定檔
@@ -16,4 +16,4 @@ description: A guide in my new Starlight docs site.
 - 身分識別提供者 (iDP) 服務狀態偵測
 - 服務提供者 (SP) 服務狀態偵測
 
-這部分還在準備資料，希望逃離學分地獄後可以開始執行。<br>
+這部分正在籌備中，希望逃離學分地獄後可以開始執行。<br>
