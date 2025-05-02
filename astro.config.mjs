@@ -21,7 +21,7 @@ export default defineConfig({
 					label: '文件',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: '外部連結', slug: 'documents/start' },
+						{ label: '外部連結', slug: 'documents/links' },
 					],
 				},
 				{

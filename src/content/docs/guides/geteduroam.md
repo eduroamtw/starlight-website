@@ -2,8 +2,8 @@
 title: geteduroam 使用教學
 description: 如何手動匯入設定檔
 ---
-# 排版待修
-# 系統支援度
+## 排版待修
+## 系統支援度
 - 可使用的系統
     - Windows
     - Linux
@@ -12,8 +12,8 @@ description: 如何手動匯入設定檔
 - 不可使用的系統
     - macOS
 
-# Windows
-### for IA32/AMD64/arm64
+## Windows
+- for IA32/AMD64/arm64
 1. 下載 geteduroam 主程式
 https://www.eduroam.app
 ![win01](geteduroam/win01.png)
@@ -40,7 +40,7 @@ https://github.com/eduroamtw/geteduroam_tw/tree/main/Profile
 9. 出現 Everything is set up correctly!後，就可以快樂上網了。
 ![win09](geteduroam/win09.png)
 
-# Android
+## Android
 0. 下載設定檔
 1. 下載 geteduroam 程式
 2. 打開他
@@ -59,7 +59,7 @@ https://github.com/eduroamtw/geteduroam_tw/tree/main/Profile
 等字眼的選項
 ![android05](geteduroam/android05.png)
 
-# iOS
+## iOS
 0. 下載設定檔
 1. 下載 geteduroam 程式
 2. 打開他
