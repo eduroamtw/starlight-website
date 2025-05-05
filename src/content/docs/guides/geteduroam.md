@@ -2,7 +2,6 @@
 title: geteduroam 使用教學
 description: 如何手動匯入設定檔
 ---
-## 排版待修
 ## 系統支援度
 - 可使用的系統
     - Windows
@@ -14,11 +13,9 @@ description: 如何手動匯入設定檔
 
 ## Windows
 - for IA32/AMD64/arm64
-1. 下載 geteduroam 主程式
-https://www.eduroam.app
+1. 下載 geteduroam 主程式 [點我](https://www.eduroam.app)
 ![win01](geteduroam/win01.png)
-2. 下載各校設定檔
-https://github.com/eduroamtw/geteduroam_tw/tree/main/Profile
+2. 下載各校設定檔 [API](https://download.isli.me/) [GitHub](https://github.com/eduroamtw/geteduroam_tw/tree/main/Profile)
 ![win02](geteduroam/win02.png)
 3. 新增一個資料夾，名稱任意。
 4. 將剛剛下載的設定檔與 geteduroam 主程式放進去剛才新增的資料夾。
@@ -37,7 +34,7 @@ https://github.com/eduroamtw/geteduroam_tw/tree/main/Profile
 7. 輸入你單位帳密
 8. 按 Connect
 ![win08](geteduroam/win08.png)
-9. 出現 Everything is set up correctly!後，就可以快樂上網了。
+9. 出現 Everything is set up correctly! 後，就可以快樂上網了。
 ![win09](geteduroam/win09.png)
 
 ## Android

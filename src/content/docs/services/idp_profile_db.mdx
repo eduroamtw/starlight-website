@@ -1,25 +1,34 @@
 ---
 title: iDP 設定檔資料庫
 description: 用於 geteduroam 程式的設定檔。
-template: splash
-hero:
-  tagline: 用於 geteduroam 程式的設定檔。
-  image:
-    file: ../../assets/icon.png
-  actions:
-    - text: 設定檔下載 (API)
-      link: https://download.isli.me/
-      icon: right-arrow
-    - text: 設定檔下載 (GitHub)
-      link: https://github.com/eduroamtw/geteduroam_tw/
-      icon: right-arrow
-    - text: geteduroam 下載
-      link: http://eduroam.app/
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+**用於 geteduroam 程式的設定檔。**
+
+import { Aside, Badge, LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton
+  href="https://download.isli.me/"
+  icon="download"
+  iconPlacement="start"
+>
+  設定檔下載
+</LinkButton>
+<LinkButton
+  href="/guides/geteduroam/"
+  icon="open-book"
+  iconPlacement="start"
+>
+  geteduroam 使用教學
+</LinkButton>
+<LinkButton
+  href="https://eduroam.app/"
+  variant="secondary"
+  icon="external"
+  iconPlacement="start"
+>
+  geteduroam 下載
+</LinkButton>
 
 因為臺灣沒有官方的 geteduroam 能用，所以我手搓了一些大學的設定檔[1]。  
 製作這些設定檔時，參考了 `Srednja šola Jesenice` 以及 `eVA(UK) - eduroam Visitor Access UK` 的設定檔格式，在此註明。  

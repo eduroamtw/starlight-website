@@ -1,31 +1,39 @@
 ---
 title: 設定檔線上 / 單機生成器
 description: 可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器，單機版亦支援地端 RADIUS 主機。
-template: splash
-hero:
-  tagline: 可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器，單機版亦支援地端 RADIUS 主機。
-  image:
-    file: ../../assets/icon.png
-  actions:
-    - text: 現在試用 (Colab)
-      link: https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb
-      icon: right-arrow
-    - text: 線上版 GitHub
-      link: https://github.com/eduroamtw/eduroam_profile_generater_colab
-      icon: external
-      variant: minimal
-    - text: 地端版 GitHub
-      link: https://github.com/eduroamtw/eduroam_profile_generater
-      icon: external
-      variant: minimal
 ---
+**可即時生成任意單位的設定檔，使用中國科大與西安科大的測試伺服器，單機版亦支援地端 RADIUS 主機。**
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Aside, Badge, LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton
+  href="https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb"
+  icon="cloud-download"
+  iconPlacement="start"
+>
+  線上使用 (Colab)
+</LinkButton>
+<LinkButton
+  href="https://github.com/eduroamtw/eduroam_profile_generater_colab"
+  variant="secondary"
+  icon="github"
+  iconPlacement="start"
+>
+  線上版 GitHub
+</LinkButton>
+<LinkButton
+  href="https://github.com/eduroamtw/eduroam_profile_generater"
+  variant="secondary"
+  icon="github"
+  iconPlacement="start"
+>
+  地端版 GitHub
+</LinkButton>
 
 ## 敘述
 
 這是一個讓組織管理員或終端使用者可以輕易生成 eduroam WiFi 設定檔的工具，
-該設定檔相容於 geteduroam 與 eduroam CAT程式。  
+該設定檔相容於 geteduroam 與 eduroam CAT 程式。  
 eduroam 是一個全球性的教育網路漫遊服務，讓教育機構的成員可以在其他參與機構使用無線網路。  
 使用此程式，需要您提供登入帳號 的 Realm (帳號 @ 後的資訊)，不需要真實帳號密碼。  
 如果您是一般使用者，我們更推薦您使用我們的 Colab 版本，省去您安裝環境的時間。  
@@ -46,19 +54,35 @@ eduroam 是一個全球性的教育網路漫遊服務，讓教育機構的成員
     - EAP-PEAP-MSCHAPv2
     - EAP-TTLS-PAP
 
-## 線上版系統需求
+## 線上版
+### 系統需求
 
 - Google 帳號 (Google Workspace 需管理員有啟用 Google Colab 服務，建議使用個人帳號，免費。)
 - 網路
 
-## 地端版系統需求
+### 使用方法
+  
+<a href="https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>  
+
+0. 點選上方的 `Open in Colab`。
+1. 在 Google Colab 中，點選右方的 `Connect`，如果沒有登入 Google 帳號，請先登入。
+2. 之後依序點選左上方的 `Runtime` -> `Run all`，或者同時按下鍵盤上的 `Ctrl` + `F9` 按鍵，程式將會自動安裝所需環境以及釋放依賴檔案。
+3. 請依據提示，輸入您單位 eduroam 帳號 @ 後的內容 (不含 @)。
+4. 請選擇資訊來源伺服器，可直接按 `Enter` 下一步。
+5. 約 30 至 60 秒後，您單位的設定檔將自動生成並下載。
+6. 請到 [eduroam.app](https://www.eduroam.app/) 下載設定程式，並將剛才生成的設定檔匯入。  
+詳細教學請參見 [geteduroam 使用教學](/guides/geteduroam/)。
+7. 連線 eduroam。
+
+## 地端版
+### 系統需求
 
 - Python 3.13 或更高版本（可執行 `python -V` 確認版本）
 - OpenSSL (可執行 `openssl -v` 確認是否運作正常)
 - uv ([安裝指引](https://github.com/astral-sh/uv?tab=readme-ov-file#installation))
 - eduroam SP RADIUS 存取權限 (如需使用地端功能)(非必要)
 
-## 地端版安裝步驟
+### 安裝步驟
 
 1. 複製儲存庫：
 
@@ -74,7 +98,7 @@ uv venv
 source venv/bin/activate
 ```
 
-## 使用方法
+### 使用方法
 
 ```bash
 uv run gen
