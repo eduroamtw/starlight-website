@@ -1,6 +1,6 @@
 ---
 title: 設定檔手動生成教學
-description: A guide in my new Starlight docs site.
+description: 手動生成 geteduroam 用的設定檔。
 ---
 
 # 自行建立設定檔<br>

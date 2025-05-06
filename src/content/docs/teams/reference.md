@@ -1,6 +1,6 @@
 ---
 title: 貢獻者
-description: 貢獻者
+description: eduroam 台灣第三方資料庫的貢獻者列表
 ---
 
 ## 作者
