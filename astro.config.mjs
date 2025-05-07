@@ -11,8 +11,7 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/eduroamtw' }],
 			sidebar: [
 				{ slug: 'starts/gettingstart' },
-				{ slug: 'teams/about' },
-				{ slug: 'teams/reference' },
+				{ slug: 'about' },
 				{
 					label: '服務一覽',
 					items: [
