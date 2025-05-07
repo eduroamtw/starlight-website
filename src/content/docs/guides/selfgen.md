@@ -3,7 +3,6 @@ title: 設定檔手動生成教學
 description: 手動生成 geteduroam 用的設定檔。
 ---
 
-# 自行建立設定檔<br>
 首先，先使用測試帳號或改過密碼的帳號 (資安緣故)，或 `anonymous@#Realm#`，去下面兩個站點 (擇一) 發起測試。<br>
 - 中国科学技术大学<br>
   <https://eduroam.ustc.edu.cn/><br>
