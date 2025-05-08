@@ -2,15 +2,23 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightFullViewMode from 'starlight-fullview-mode'
+import starlightUtils from "@lorenzo_lewis/starlight-utils";
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://edur.isli.me',
 	integrations: [
 		starlight({
-			title: 'eduroamTW 臺灣第三方資料庫',
+			title: 'eduroamTWDB',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/eduroamtw' }],
 			sidebar: [
+				{
+					label: "leadingNavLinks",
+					items: [
+						{ label: "支援", link: "starts/gettingstart" },
+						{ label: "關於", link: "about" }
+					]
+				},
 				{ slug: 'starts/gettingstart' },
 				{ slug: 'about' },
 				{
@@ -38,7 +46,12 @@ export default defineConfig({
 			plugins: [
 				starlightFullViewMode({
 					leftSidebarEnabled: true,  rightSidebarEnabled: false
-				})
+				}),
+				starlightUtils({
+					navLinks: {
+						leading: { useSidebarLabelled: "leadingNavLinks" }
+					}
+				}),
 			],
 		}),
 	],
