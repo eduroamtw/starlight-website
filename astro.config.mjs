@@ -7,7 +7,7 @@ export default defineConfig({
 	site: 'https://edur.isli.me',
 	integrations: [
 		starlight({
-			title: 'eduroamTW 第三方資料庫',
+			title: 'eduroamTW 臺灣第三方資料庫',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/eduroamtw' }],
 			sidebar: [
 				{ slug: 'starts/gettingstart' },

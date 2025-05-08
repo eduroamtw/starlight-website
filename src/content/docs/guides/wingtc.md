@@ -1,6 +1,6 @@
 ---
-title: Windows GTC 模組使用教學
-description: Windows GTC 模組使用教學
+title: Windows GTC 使用教學 (eduroam)
+description: EAP-GTC / Cisco:PEAP 使用教學 (WPA2-Enterprise)
 ---
 
 ## 前言

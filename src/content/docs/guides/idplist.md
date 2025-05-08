@@ -1,7 +1,8 @@
 ---
-title: 學生可用 eduroam 帳號申請
-description: 臺灣學生可用 eduroam IdP 列表與申辦方式
+title: eduroam 連線教學：帳號申請
+description: 臺灣學生可用 eduroam IdP 列表與申辦方式。
 ---
+**臺灣學生可用 eduroam IdP 列表與申辦方式。**
 > 轉自 [這裡](https://neko70.net/eduroam_1/)
 ## 教育雲
 
