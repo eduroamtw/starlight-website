@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightFullViewMode from 'starlight-fullview-mode'
 
 // https://astro.build/config
 export default defineConfig({
@@ -33,6 +34,11 @@ export default defineConfig({
 						{ label: '外部連結', slug: 'documents/links' },
 					],
 				},
+			],
+			plugins: [
+				starlightFullViewMode({
+					leftSidebarEnabled: true,  rightSidebarEnabled: false
+				})
 			],
 		}),
 	],
