@@ -15,8 +15,8 @@ export default defineConfig({
 				{
 					label: "leadingNavLinks",
 					items: [
-						{ label: "支援", link: "starts/gettingstart" },
-						{ label: "關於", link: "about" }
+						{ label: "支援文件", link: "starts/gettingstart" },
+						{ label: "關於我們", link: "about" }
 					]
 				},
 				{ slug: 'starts/gettingstart' },
