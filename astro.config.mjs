@@ -10,6 +10,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'eduroamTWDB',
+			logo: {
+				light: './src/assets/light-logo.png',
+				dark: './src/assets/dark-logo.png',
+				replacesTitle: true,
+		},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/eduroamtw' }],
 			sidebar: [
 				{
