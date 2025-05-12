@@ -30,15 +30,21 @@ export default defineConfig({
 					label: '服務一覽',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'iDP 設定檔資料庫', slug: 'services/idp_profile_db' },
+						{ label: 'geteduroam IdP 設定檔資料庫', slug: 'services/idp_profile_db' },
 						{ label: 'iDP Realm & 憑證資料庫', slug: 'services/idp_realm_cert_db' },
-						{ label: '設定檔線上 / 單機生成器', slug: 'services/profile_gen' },
 						{ label: 'TANetRoaming 向上相容設定檔', slug: 'services/offload' },
 						],
 				},
 				{
 					label: '手冊',
-					autogenerate: { directory: 'guides' },
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'eduroam 連線教學：帳號申請', slug: 'guides/idplist' },
+						{ label: 'eduroam 連線教學：裝置設定', slug: 'guides/geteduroam' },
+						{ label: '設定檔生成：自動生成教學', slug: 'guides/autogen' },
+						{ label: '設定檔生成：手動生成教學', slug: 'guides/selfgen' },
+						{ label: 'Windows GTC 使用教學 (eduroam)', slug: 'guides/wingtc' },
+						],
 				},
 				{
 					label: '文件',

@@ -1,5 +1,5 @@
 ---
-title: IdP 設定檔資料庫
+title: geteduroam IdP 設定檔資料庫
 description: 用於 geteduroam 程式的設定檔。
 ---
 
@@ -15,19 +15,19 @@ import { Aside, Badge, LinkButton } from '@astrojs/starlight/components';
   設定檔下載
 </LinkButton>
 <LinkButton
+  href="https://colab.research.google.com/github/eduroamtw/eduroam_profile_generater_colab/blob/main/eduroam_profile_generater_colab.ipynb"
+  icon="cloud-download"
+  iconPlacement="start"
+>
+  即時生成 (Colab)
+</LinkButton>
+<LinkButton
   href="/guides/geteduroam/"
+  variant="secondary"
   icon="open-book"
   iconPlacement="start"
 >
   geteduroam 使用教學
-</LinkButton>
-<LinkButton
-  href="https://eduroam.app/"
-  variant="secondary"
-  icon="external"
-  iconPlacement="start"
->
-  geteduroam 下載
 </LinkButton>
 
 因為臺灣沒有官方的 geteduroam 能用，所以我手搓了一些大學的設定檔[1]。  
