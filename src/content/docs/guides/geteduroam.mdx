@@ -1,5 +1,5 @@
 ---
-title: eduroam 連線教學：裝置設定
+title: eduroam 連線教學：自動設定
 description: 如何使用 geteduroam 以及匯入設定檔。
 ---
 **如何使用 geteduroam 以及匯入設定檔。**
@@ -15,12 +15,14 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 - 不可使用的系統
     - macOS
 
+## 前置步驟
+請先取得您單位的設定檔。  
+[**參見這裡**](http://localhost:4321/services/idp_profile_db/)
+
 ## **⬇️請選擇你的系統⬇️**
 <Tabs>
     <TabItem label="Windows" icon="seti:windows">
     ## Windows
-    0. 下載各校設定檔 [API](https://download.isli.me/) [GitHub](https://github.com/eduroamtw/geteduroam_tw/tree/main/Profile)
-    ![win01](geteduroam/win01.png)
     1. 下載 geteduroam 主程式 [**一般電腦 (amd64)**](https://dl.eduroam.app/windows/amd64/geteduroam.exe) [**arm64**](https://dl.eduroam.app/windows/arm64/geteduroam.exe)
     ![win02](geteduroam/win02.png)
     2. 新增一個資料夾，名稱任意。
@@ -45,7 +47,6 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     </TabItem>
     <TabItem label="Android" icon="phone">
     ## Android
-    0. 下載設定檔
     1. 下載 geteduroam 程式 [**Google Play**](https://play.google.com/store/apps/details?id=app.eduroam.geteduroam&pcampaignid=web_share)
     2. 打開他
     ![android01](geteduroam/android01.png)
@@ -66,7 +67,6 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     </TabItem>
     <TabItem label="iOS" icon="apple">
     ## iOS
-    0. 下載設定檔
     1. 下載 geteduroam 程式 [**App Store**](https://apps.apple.com/app/geteduroam/id1504076137)
     2. 打開他
     ![ios01](geteduroam/ios01.png)
