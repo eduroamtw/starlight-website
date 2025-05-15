@@ -33,14 +33,14 @@ import { Aside, Badge, LinkButton } from '@astrojs/starlight/components';
 
 改寫帳號的原理很簡單，使用者裝置設定時，把原本帳號的 @ 改成其他替代字元，並在帳號結尾加入特製伺服器的 Realm，使他的請求會轉送給特製伺服器。  
 特製伺服器收到認證請求後，將收到的帳號改寫回使用者原本的帳號，再發出即可，如附圖。  
-![offload_rewrite](../../../assets/offload_rewrite.png)
+![offload_rewrite](offload/offload_rewrite.png)
 
 而解釋 EAP 隧道解析不一致，則需要先提及匿名身分的原理。  
 由於 EAP 隧道內的帳密傳輸，受到 TLS 加密，因此中間轉發的 RADIUS 皆無法得知隧道內的帳密。因此，為了轉發路由等需求，EAP 規範了匿名身分的存在。  
 其運作原理是在 EAP 隧道外以明文傳送一個身分(帳號)，這個身分(帳號)不參與認證過程，僅作為中間 RADIUS 識別用。  
 而 eduroam Proxy 過程也依賴這個值的內容決定要轉發到哪個單位的伺服器。  
 因此，我們可以做到內部與外部填寫不一樣 Realm 的帳號，來達成定向路由的結果，如附圖。  
-![offload_anonymous](../../../assets/offload_anonymous.png)
+![offload_anonymous](offload/offload_anonymous.png)
 
 ### 問題與解法
 #### 認證紀錄問題
