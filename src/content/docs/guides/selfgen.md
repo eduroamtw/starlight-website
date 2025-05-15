@@ -1,5 +1,5 @@
 ---
-title: 設定檔生成：手動生成教學
+title: geteduroam 設定檔生成：手動生成教學
 description: 手動生成 geteduroam 用的設定檔。
 ---
 

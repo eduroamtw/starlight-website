@@ -1,5 +1,5 @@
 ---
-title: Windows GTC 使用教學 (eduroam)
+title: eduroam 連線教學：Windows 手動設定 (PEAP-GTC)
 description: EAP-GTC / Cisco:PEAP 使用教學 (WPA2-Enterprise)
 ---
 
@@ -21,17 +21,17 @@ description: EAP-GTC / Cisco:PEAP 使用教學 (WPA2-Enterprise)
     - [微軟官方下載 (已失效)](https://download.microsoft.com/download/8/2/E/82EEFB07-1AB3-4557-B654-B34D64C9DD94/Cisco_EAP_Supplicant_Installer_v1.zip)
 ## Aruba EAP-GTC
 1. 點選設定新的連線及網路
-![general01](wingtc/general01.png)
+![general01](winmanual/general01.png)
 2. 點選手動連線到無線網路
-![general02](wingtc/general02.png)
+![general02](winmanual/general02.png)
 3. 請在網路名稱中，輸入 eduroam，安全性類型設定為 WPA2-Enterprise，之後點選下一步
-![general03](wingtc/general03.png)
+![general03](winmanual/general03.png)
 4. 點選"變更連線設定"(絕對不要按關閉)
-![general04](wingtc/general04.png)
+![general04](winmanual/general04.png)
 5. 在跳出的新視窗中，點選"安全性"分頁，然後在安全性分頁中，先確認"選擇網路驗證方法"是否選擇"Microsoft: Protected EAP (PEAP)"，然後點選紅框右方的設定。
-![aruba01](wingtc/aruba01.png)
+![aruba01](winmanual/aruba01.png)
 6. 在跳出來的新視窗中，取消勾選下圖上方紅框中的兩個勾取框，並且在下方"選擇驗證方法"中，選擇 "EAP-Token"，之後按下確定。
-![aruba02](wingtc/aruba02.png)
+![aruba02](winmanual/aruba02.png)
 > 選項解釋：
 > - 透過驗證憑證來確認伺服器身分識別
 >   - 取消勾選會有資安風險 (密碼洩漏風險)，請小心使用。
@@ -42,24 +42,24 @@ description: EAP-GTC / Cisco:PEAP 使用教學 (WPA2-Enterprise)
 >   - 也可勾選，並填寫為 `anonymous@<Realm>`
 >   - 如：`anonymous@mail.edu.tw`
 7. 按下確定，關閉
-![aruba03](wingtc/aruba03.png)
-![general05](wingtc/general05.png)
+![aruba03](winmanual/aruba03.png)
+![general05](winmanual/general05.png)
 8. 請依照右圖內容輸入你的帳號密碼
-![aruba04](wingtc/aruba04.png)
+![aruba04](winmanual/aruba04.png)
 
 ## Cisco PEAP
 1. 點選設定新的連線及網路
-![general01](wingtc/general01.png)
+![general01](winmanual/general01.png)
 2. 點選手動連線到無線網路
-![general02](wingtc/general02.png)
+![general02](winmanual/general02.png)
 3. 請在網路名稱中，輸入 eduroam，安全性類型設定為 WPA2-Enterprise，之後點選下一步
-![general03](wingtc/general03.png)
+![general03](winmanual/general03.png)
 4. 點選"變更連線設定"(絕對不要按關閉)
-![general04](wingtc/general04.png)
+![general04](winmanual/general04.png)
 5. 在跳出的新視窗中，點選"安全性"分頁，然後在安全性分頁中，先在"選擇網路驗證方法"(紅框)中，選擇"Cisco: PEAP"，然後點選紅框右方的設定。
-![cisco01](wingtc/cisco01.png)
+![cisco01](winmanual/cisco01.png)
 6. 在跳出來的新視窗中，取消勾選下圖紅框中的兩個勾取框。
-![cisco02](wingtc/cisco02.png)
+![cisco02](winmanual/cisco02.png)
 > 選項解釋：
 > - Use anonymous outer identity:
 >    - 也可勾選，並填寫為 `anonymous@<Realm>`
@@ -70,10 +70,10 @@ description: EAP-GTC / Cisco:PEAP 使用教學 (WPA2-Enterprise)
 >   - 請叫你網管去你單位的 FreeRADIUS 裝TTLS-PAP 的支援模組。
 >   - 去 * 的 EAP-PEAP-GTC
 7. 請依照右圖內容輸入你的帳號密碼
-![cisco03](wingtc/cisco03.png)
+![cisco03](winmanual/cisco03.png)
 > - 上方為公用電腦設定，不會記錄帳號密碼
 > - 下方為私人電腦設定，會記錄帳號密碼
 8. 按下確定，確定，關閉
-![cisco04](wingtc/cisco04.png)
-![cisco05](wingtc/cisco05.png)
-![general05](wingtc/general05.png)
+![cisco04](winmanual/cisco04.png)
+![cisco05](winmanual/cisco05.png)
+![general05](winmanual/general05.png)
