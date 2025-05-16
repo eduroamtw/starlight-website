@@ -50,7 +50,7 @@ description: 關於 eduroam 台灣第三方資料庫
 <br>
 
 ## 合作單位
-#### 學術網路漫遊交換中心
+#### TANet 無線網路漫遊交換中心 (TANRC)
 <img src="https://roamingcenter.ndhu.edu.tw/themes/TANetRoaming_logo.png" style="float:right; margin: 5px;" width=128 />
 
 - eduroam TW NRO
