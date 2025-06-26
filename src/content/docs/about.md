@@ -57,6 +57,13 @@ description: 關於 eduroam 台灣第三方資料庫
 - Website: https://roamingcenter.ndhu.edu.tw/
 <br><br><br>
 
+## 主機提供
+#### NCSE Network
+<img src="https://cdn-file.ncse.tw/ncse_logo_no_background.png" style="float:right; margin: 5px;" width=128 />
+
+- Website: https://ncse.tw/
+<br><br><br><br>
+
 ## 測試者
 [eartzh](https://github.com/eartzh)<br>
 [kohiro](https://www.facebook.com/profile.php?id=61558253318353)<br>
