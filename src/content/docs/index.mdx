@@ -14,10 +14,10 @@ hero:
       link: /guides/idplist/
       icon: right-arrow
       variant: secondary
-    - text: 服務一覽
-      link: /#%E6%9C%8D%E5%8B%99%E4%B8%80%E8%A6%BD
+    - text: 服務監測
+      link: https://status.isli.me/
       icon: external
-      variant: minimal
+      variant: secondary
 ---
 
 <div itemscope itemtype="https://schema.org/WebSite">
@@ -44,5 +44,10 @@ import { Aside, Badge, Card, CardGrid, LinkButton, LinkCard } from '@astrojs/sta
 	title="TANetRoaming 向上相容設定檔"
 	href="/services/offload/"
 	description="內部實驗中，未來將可以使不支援 EAP 認證的 IdP 可使用 eduroam 服務。"
+	/>
+  <LinkCard
+	title="各校 RADIUS 服務監測"
+	href="/services/status/"
+	description="各校 RADIUS 服務監測。"
 	/>
 </CardGrid>

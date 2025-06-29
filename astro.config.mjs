@@ -33,6 +33,7 @@ export default defineConfig({
 						{ label: 'geteduroam IdP 設定檔資料庫', slug: 'services/idp_profile_db' },
 						{ label: 'iDP Realm & 憑證資料庫', slug: 'services/idp_realm_cert_db' },
 						{ label: 'TANetRoaming 向上相容設定檔', slug: 'services/offload' },
+						{ label: '各校 RADIUS 服務監測', slug: 'services/status' },
 						],
 				},
 				{
